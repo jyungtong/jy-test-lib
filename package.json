@@ -1,0 +1,28 @@
+{
+  "name": "jy-test-lib",
+  "version": "1.0.1",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./util": {
+      "import": "./dist/util.mjs",
+      "require": "./dist/util.js",
+      "types": "./dist/util.d.ts"
+    }
+  }
+}
