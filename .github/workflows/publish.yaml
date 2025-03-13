@@ -69,7 +69,9 @@ jobs:
         run: npm ci
 
       - name: Build package
-        run: npm run build
+        run: printenv
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
   release:
     name: Version Bump & Create Release PR
