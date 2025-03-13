@@ -9,7 +9,8 @@
   ],
   "scripts": {
     "build": "tsc",
-    "release": "npm run build && npx @changesets/cli publish"
+    "release": "npm run build && npx @changesets/cli publish",
+    "version": "npx @changesets/cli version"
   },
   "devDependencies": {
     "typescript": "^5.8.2"
