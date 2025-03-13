@@ -92,7 +92,7 @@ jobs:
         run: npm ci
 
       - name: Create version bump
-        run: npx changeset version
+        run: npx @changesets/cli version
 
       - name: Commit version bump
         run: |
