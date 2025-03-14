@@ -1,5 +1,11 @@
 # jy-test-lib
 
+## 1.0.10
+
+### Patch Changes
+
+- 8918e83: temp disable npmrc create in pipeline
+
 ## 1.0.9
 
 ### Patch Changes
